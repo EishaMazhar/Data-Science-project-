@@ -237,7 +237,7 @@ CHROME_DRIVER_PATH = "Data Scraping/chromedriver.exe"
 with open("Data Scraping/input_jobs.json") as f:
     input_jobs = json.load(f)
     all_jobs = []
-    file_path = Path("../glassdoor_jobs.csv")
+    file_path = Path("glassdoor_jobs_new.csv")
     for i in range(len(input_jobs['job titles'])):
         try:
             print("fetching jobs for {}".format(input_jobs['job titles'][i]))
