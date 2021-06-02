@@ -237,7 +237,7 @@ CHROME_DRIVER_PATH = "Data Scraping/chromedriver.exe"
 with open("Data Scraping/input_jobs.json") as f:
     input_jobs = json.load(f)
     all_jobs = []
-    file_path = Path("glassdoor_jobs_new.csv")
+    file_path = Path("Data/glassdoor_jobs.csv")
     for i in range(len(input_jobs['job titles'])):
         try:
             print("fetching jobs for {}".format(input_jobs['job titles'][i]))
@@ -257,7 +257,7 @@ with open("Data Scraping/input_jobs.json") as f:
             continue
 
 df = pd.concat(all_jobs)
-df.to_csv('../glassdoor_jobs_all.csv')
+df.to_csv('../Data/glassdoor_jobs_all.csv')
 # with pd.option_context('display.max_rows', None, 'display.max_columns', None):  # more options can be specified also
 #     print(df)
 

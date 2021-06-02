@@ -1,12 +1,15 @@
 {
    "job titles": [
+      "data scientist",
+      "data engineer",
+      "research engineer",
       "data analyst",
       "Business analyst",
       "devops",
       "machine learning engineer",
       "research scientist",
       "python engineer",
-      "python"
+      "python developer"
    ],
    "job count": 800
 }

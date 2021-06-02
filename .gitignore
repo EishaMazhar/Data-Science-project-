@@ -3,7 +3,6 @@
 *.xls
 *.csv
 
-
 *.log
 *.pot
 
@@ -33,3 +32,4 @@ fin-env/
 .installed.cfg
 *.egg
 
+.ipynb_checkpoints/
